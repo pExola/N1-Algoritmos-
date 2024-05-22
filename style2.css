@@ -1,0 +1,307 @@
+body{
+    background-color: black;
+}
+
+.one {
+    margin: none;
+}
+
+.two {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin-left: 80px;
+    margin-right: 80px;
+    justify-content: center;
+    border-right: none;
+}
+
+.logo {
+    text-align: center;
+    padding: 15px 0; /* Espaçamento acima e abaixo do logotipo */
+    background-color: black;
+}
+
+ul{ 
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    border-right: none;
+}
+
+li{
+    border-right: none;
+    float: left;
+    border-right: 1px solid #bbb;
+}
+
+li:sub {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: black; /* Cor de fundo do submenu */
+    padding: 0;
+    margin: 0;
+}
+
+.submenu li {
+    display: block;
+}
+
+.submenu li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff; /* Cor do texto do submenu */
+}
+
+.submenu li a:hover {
+    background-color: #555; /* Cor de fundo ao passar o mouse no submenu */
+}
+
+.submenu-parent:hover .submenu {
+    display: block;
+}
+
+div.galeria{
+    margin: 58px;
+    border: 2px solid #ccc;
+    float: left;
+    width: 280px;
+    height: 280px;
+    position: relative;
+    display: inline-block;
+}
+
+div.galeria:hover{
+    border: 2px solid #777;
+}
+
+div.galeria img {
+    width: 100%;
+    height: 100%;
+}
+
+div.desc{
+    padding: 15px;
+    text-align: center;
+}
+
+.sobreposicao {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Cor semi-transparente escura */
+    opacity: 0; /* Começa invisível */
+    transition: opacity 0.3s ease; /* Efeito de transição suave */
+}
+
+.galeria:hover .sobreposicao {
+    opacity: 1; /* Torna a sobreposição visível ao passar o mouse */
+}
+
+.desc {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #fff; /* Cor do texto da descrição */
+    z-index: 1; /* Certifica-se de que a descrição está sobre a sobreposição */
+}
+footer {
+    background-color: black; /* Cor de fundo do rodapé */
+    color: #fff; /* Cor do texto do rodapé */
+    text-align: center;
+    padding: 20px 0;
+}
+
+.coluna {
+    display: inline-block;
+    vertical-align: top;
+    width: 45%; /* Largura das colunas */
+    text-align: left;
+}
+
+.coluna h3 {
+    margin-top: 0;
+}
+
+.redes-sociais {
+    display: block;
+    justify-content: center;
+}
+
+.card-rede-social {
+    margin: 10px;
+}
+
+.card-rede-social img {
+    width: 30px; /* Ajuste o tamanho dos ícones conforme necessário */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+}
+
+label {
+    margin-top: 10px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, button {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #b30000;
+    color: white;
+    cursor: pointer;
+}
+
+.membro-equipe {
+    display: flex; /* Usar flexbox para layout lado a lado */
+    margin-bottom: 20px; /* Espaçamento entre os membros da equipe */
+  }
+  
+  .membro-equipe img {
+    width: 542px; /* Ajustar a largura da imagem */
+    height: auto; /* Manter proporção da imagem */
+    margin-right: 40px; /* Espaço entre a imagem e a descrição */
+    margin-left: 58px;
+  }
+  
+  .descricao-membro-equipe {
+    flex: 1; /* A descrição ocupará o espaço restante */
+  }
+  
+  .descricao-membro-equipe h3 {
+    margin-top: 0; /* Remover margem superior padrão */
+    margin-bottom: 10px;
+  }
+  
+  .descricao-membro-equipe p {
+    margin-bottom: 5px;
+  }
+
+  .formulario-candidatura {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .campo {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  button[type="submit"] {
+    background-color: #b30000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+
+  
+.historia {
+    display: flex; /* Usar flexbox para layout lado a lado */
+    margin-bottom: 20px; /* Espaçamento entre os membros da equipe */
+  }
+  
+  .historia img {
+    width: 450px; /* Ajustar a largura da imagem */
+    height: auto; /* Manter proporção da imagem */
+    margin-right: 40px; /* Espaço entre a imagem e a descrição */
+    margin-left: 58px;
+  }
+  
+  .descricao-historia p {
+    margin-bottom: 5px;
+  }
+
+  #back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+#back-to-top:hover {
+    background-color: #c20000;
+}
+
+#back-to-top svg {
+    width: 24px;
+    height: 24px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.logo img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo img:hover {
+    transform: scale(1.1); /* Aumenta o tamanho em 10% */
+}
+

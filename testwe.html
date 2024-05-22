@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu Site</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="logo">
+        <img src="./IMG/logo10.png" width="220px">
+    </div>
+    <hr class="one" color="red" >
+    <header>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#agendamento">Agendamento</a></li>
+            <li class="submenu-parent">
+                <a href="#contato">Contato</a>
+                <ul class="submenu">
+                    <li><a href="#fale-conosco">Fale Conosco</a></li>
+                    <li><a href="#trabalhe-conosco">Trabalhe Conosco</a></li>
+                </ul>
+            </li>
+            <li class="submenu-parent">
+                <a href="#sobre">Sobre</a>
+                <ul class="submenu">
+                    <li><a href="#equipe">Equipe</a></li>
+                    <li><a href="#historia">História</a></li>
+                </ul>
+            </li>
+            <li><a href="#servicos">Serviços</a></li>
+        </ul>
+    </header>
+        <section id="home">
+            <style>
+                video {
+                    margin: 0;
+                    padding: 0;
+                    transform: scaleY(0.90);
+                    width: 100%;
+                    height: 100%;
+                }
+            </style>
+            </head>
+            <body>
+            <video autoplay loop muted>
+                <source src="./IMG/makita.mp4" type="video/mp4" object-fit="fill">
+            </video>
+            
+            <hr class="two" color="red">
+        </section>
+
+        <section id="servicos" class="fade-in">
+            <h1 style="color: white;">O QUE OFERECEMOS</h1>
+    <br>
+    <h3 style="color: white;">Confira os serviços disponíveis na rede MAKITA HAIRSTYLE SHOP.</h3>
+<div class="galeria">
+    <a target="_self" href="corte.html">
+        <img src="./IMG/corteT.webp" alt="Clique aqui" width="400px">
+        <div class="sobreposicao"></div>
+    </a>
+    <div class="desc">TESOURA</div>
+</div>
+<div class="galeria">
+    <a target="_self" href="barba.html">
+        <img src="./IMG/pent4.jfif" alt="Clique aqui" width="600" height="400">
+        <div class="sobreposicao"></div>
+    </a>
+    <div class="desc">MÁQUINA</div>
+</div>
+<div class="galeria">
+    <a target="_self" href="barbao.html">
+        <img src="./IMG/barba1.jfif" alt="Clique aqui" width="600" height="400">
+        <div class="sobreposicao"></div>
+    </a>
+    <div class="desc">BARBA</div>
+</div>
+<hr class="two" color="red">
+        </section>
+        <section id="agendamento">
+        <h1 style="color: white;">AGENDE SEU HORÁRIO</h1>
+    <form id="agendamentoForm">
+        <label for="nome" style="color: white;" >Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="data" style="color: white;">Data:</label>
+        <input type="date" id="data" name="data" required>
+
+        <label for="hora" style="color: white;">Horário:</label>
+        <input type="time" id="hora" name="hora" required>
+
+        <button type="submit" id="agendarBtn">Agendar</button>
+        <BR>
+    </form>
+<hr class="two" color="red">
+        </section>
+
+        <section id="trabalhe-conosco">
+            <h1 style="color: white;">TRABALHE CONOSCO</h1>
+  <br>
+  <section class="formulario-candidatura">
+    <h2 style="color: white;">Candidate-se à MAKITA HAIRSTYLE SHOP</h2>
+    <p style="color: white;">Preencha o formulário abaixo para se candidatar a uma vaga em nossa equipe.</p>
+
+    <form id="formulario-candidatura">
+      <div class="campo">
+        <label for="nomi" style="color: white;">Nome:</label>
+        <input type="text" id="nomi" name="nomi" required>
+      </div>
+
+      <div class="campo">
+        <label for="email" style="color: white;">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="campo">
+        <label for="idade" style="color: white;">Idade:</label>
+        <input type="number" id="idade" name="idade" required>
+      </div>
+
+      <div class="campo">
+        <label for="anexo" style="color: white;">Anexo (CV, portfólio, etc.):</label>
+        <input type="file" id="anexo" name="anexo" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png">
+      </div>
+
+      <button type="submit">Enviar Candidatura</button>
+    </form>
+  </section>
+  <br>
+  <hr class="two" color="red">
+        </section>
+
+        <section id="equipe">
+            <h1 style="color: white;">EQUIPE</h1>
+    <br>
+<div class="membro-equipe">
+    <img src="./IMG/maktub.jpg" alt="Nome do membro da equipe">
+    <div class="descricao-membro-equipe">
+        <br>
+      <h2 style="color: white;">Marcos Gabriel</h2>
+      <p style="color: white;">Criador e CEO da MAKITA HAIRSTYLE SHOP - 9402</p>
+      <p style="color: white;">Descrição breve da experiência e habilidades do membro da equipe</p>
+      <h2 style="color: white;">Arthur Euzebio</h2>
+      <p style="color: white;">Gerente de Unidades e logística - 9367</p>
+      <p style="color: white;">Descrição breve da experiência e habilidades do membro da equipe</p>
+      <h2 style="color: white;">Kauan Paixão</h2>
+      <p style="color: white;">Gerente de marketing e TI - 9378</p>
+      <p style="color: white;">Descrição breve da experiência e habilidades do membro da equipe</p>
+    </div>
+  </div>
+  <hr class="two" color="red">
+
+        </section>
+
+        <section id="historia">
+            <h1 style="color: white;">HISTÓRIA</h1>
+    <br>
+<div class="historia">
+    <figure>
+        <img src="./IMG/logo10.png" style="width: 450px;">
+        <figcaption style="color: white; display: block; text-align: center; margin-top: 25px;">NIKE X MAKITA HAIRSTYLE SHOP, 2009</figcaption>
+      </figure>
+    <div class="descricao-historia">
+        <BR><BR>
+      <p style="color: white;">
+        Nossa história começou em 2002, quando Marcos abriu as portas de sua primeira barbearia em Santa Rita do Passa 4. Movido por uma paixão inabalável pela arte da barbearia, ele dedicou-se a criar um espaço onde os homens pudessem se sentir confortáveis, relaxar e desfrutar de um serviço impecável. Ao longo dos anos, a Barbearia MAKITA HAIRSTYLE SHOP se expandiu, tornando-se a maior rede de barbearias do Brasil. Com mais de 50 unidades espalhadas por todo o país, atendemos a milhares de clientes diariamente, oferecendo a eles a mesma qualidade e atenção aos detalhes que nos caracterizam desde o início. Nossa reputação de excelência atraiu clientes famosos de diversas áreas, como Cristiano Ronaldo, Fausto Silva e Justin Bieber. Para nós, é uma honra atender a cada um deles, proporcionando-lhes uma experiência única e memorável.</p>
+    </div>
+  </div>
+  <hr class="two" color="red">
+        </section>
+
+
+        <section id="fale-conosco">
+            <footer>
+                <div class="coluna">
+                    <h3>ATENDIMENTO</h3>
+                    <p style="color: grey;">Telefone:</p>
+                    <p style="color: grey;">(30)1875-7769</p>
+                    <p style="color: grey;">Horário de funcionamento:</p>
+                    <p style="color: grey;">Segunda a sábado, das 9h às 21h</p>
+                    <p style="color: grey;">Email:</p>
+                    <p style="color: grey;">makitahairstyle@gmail.com</p>
+                </div>
+                <div class="coluna">
+                    <h3>REDES SOCIAIS</h3>
+                    <div class="redes-sociais">
+                        <div class="card-rede-social">
+                            <a href="#"><img src="facebook.png" alt="Facebook"></a>
+                        </div>
+                        <div class="card-rede-social">
+                            <a href="#"><img src="instagram.png" alt="Instagram"></a>
+                        </div>
+                        <div class="card-rede-social">
+                            <a href="#"><img src="facebook.png" alt="Whatsapp"></a>
+                        </div>
+                        <div class="card-rede-social">
+                            <a href="#"><img src="facebook.png" alt="TikTok"></a>
+                        </div>
+                        <!-- Adicione mais cards de redes sociais conforme necessário -->
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <br>
+                    &copy; 2024 MAKITA HAIRSTYLE SHOP | Todos os direitos reservados.
+                </div>
+            </footer>
+        </section>
+        <button id="back-to-top" aria-label="Voltar ao início">
+            <svg width="24" height="24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up" viewBox="0 0 24 24">
+                <line x1="12" y1="19" x2="12" y2="5"></line>
+                <polyline points="5 12 12 5 19 12"></polyline>
+            </svg>
+        </button>
+    <script src="tewste.js"></script>
+</body>
+</html>
